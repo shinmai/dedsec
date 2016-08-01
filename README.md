@@ -1,4 +1,4 @@
-# dedsec
+# Dedsec
 Fan project for Watch Dogs 2
 
 Hi !
