@@ -6,12 +6,12 @@ body {
    letter-spacing: -1px;
    font-size: 12px;
    cursor: default;
-	animation: fuck 10s linear infinite;
+	animation: fuck 5.75s linear infinite;
 }
 
 body.fuck {
    background-image: url('img/bg.png');
-	animation: fuck 10s linear infinite,
+	animation: fuck 5.75s linear infinite,
 	           fuckcolor 100ms linear 3;
 }
 
