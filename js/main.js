@@ -1,6 +1,30 @@
-function change() {
-        document.getElementById("sure").innerHTML ="ARE YOU SURE THAT YOU'RE SURE ?";
-        document.getElementById("wtf").innerHTML ="#WTF";
-        document.getElementById("no").innerHTML ="NO";
-        document.getElementById("background").style.background = "url('img/bg.png')";
-}
+(function() {
+   "use strict";
+   function fn(){
+      if (document.images) {
+         var image = new Image()
+             image.src = "https://github.com/KevinDupas/dedsec/raw/master/img/bg.png"
+      }
+      var buttons = document.getElementsByTagName('button');
+      for(var button of buttons) {
+         button.addEventListener("click", function () {
+            document.body.className+="fuck";
+            buttons[0].innerText ="#WTF";
+            buttons[2].innerText ="NO";
+            document.getElementById("sure").innerText ="ARE YOU SURE THAT YOU'RE SURE ?";
+         });
+      }
+   }
+
+   var oldonload = window.onload;
+   if (typeof window.onload != 'function') {
+      window.onload = fn;
+   } else {
+      window.onload = function() {
+         if (oldonload) {
+            oldonload();
+         }
+         fn();
+      }
+   }   
+})();
