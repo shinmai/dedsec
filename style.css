@@ -2,7 +2,7 @@
 
 body {
 	font-family: 'Androgyne', sans-serif;
-   background: #85D315 url('https://github.com/KevinDupas/dedsec/raw/master/img/bg1.png');
+   background: #85D315 url('img/bg1.png');
    letter-spacing: -1px;
    font-size: 12px;
    cursor: default;
@@ -10,7 +10,7 @@ body {
 }
 
 body.fuck {
-   background-image: url('https://github.com/KevinDupas/dedsec/raw/master/img/bg.png');
+   background-image: url('img/bg.png');
 	animation: fuck 10s linear infinite,
 	           fuckcolor 100ms linear 3;
 }
@@ -74,7 +74,7 @@ body.fuck {
   top: 35px;
   left: 20px;
   background-size: cover;
-  background-image: url("https://github.com/KevinDupas/dedsec/raw/master/img/picture.png");
+  background-image: url("img/picture.png");
 }
 
 .window p {
